@@ -67,3 +67,65 @@ def walk():
 
 put()           
 walk()
+
+# Around 3 
+# not proud of it 
+think(10)
+def turn_right():
+    for i in range(3): 
+        turn_left()
+        
+def walk():
+    while wall_on_right() and front_is_clear():
+        move()
+        if object_here():
+            break
+        if not front_is_clear():
+            turn_left()
+        if not wall_on_right(): 
+            turn_right()
+            move()
+
+
+put()  
+turn_left()
+move()
+turn_right()
+move()
+move()
+turn_right()
+move()
+turn_left()
+walk()
+
+walk()
+
+# around 4 
+think(10)
+def turn_right():
+    for i in range(3): 
+        turn_left()
+        
+def walk():
+    while wall_on_right() and front_is_clear():
+        move()
+        if object_here():
+            break
+        if not front_is_clear():
+            turn_left()
+        if not wall_on_right(): 
+            turn_right()
+            move()
+
+def turn_around(): 
+    for i in range(2): 
+        turn_left()
+               
+
+put()  
+turn_around()
+move()
+turn_right()
+move()
+walk()
+
